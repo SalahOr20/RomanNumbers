@@ -26,6 +26,12 @@ class TestNombreRomain(unittest.TestCase):
         romain = ArabeToRomain.NbrRomain(nombre)
         #test 3
         self.assertEqual(romain,'III')
+        # etant donne nombre 4
+        nombre = 4
+        # etant donne nombre romain 'Iv'
+        romain = ArabeToRomain.NbrRomain(nombre)
+        # test 3
+        self.assertEqual(romain, 'IV')
 
 
 
