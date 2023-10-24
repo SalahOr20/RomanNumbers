@@ -17,4 +17,4 @@ jobs:
           python-version: 3.12
 
       - name: Exécuter les tests
-        run: pytest
+        run: test.py
