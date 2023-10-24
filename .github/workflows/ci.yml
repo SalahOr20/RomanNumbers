@@ -1,12 +1,14 @@
-name: CI
+name: Vérifier les tests
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout du code
         uses: actions/checkout@v2
@@ -21,4 +23,3 @@ jobs:
 
       - name: Exécuter les tests
         run: python test.py
-
