@@ -8,8 +8,11 @@ class ArabeToRomain():
             return 'II'
         elif nombre == 3:
             return 'III'
+        elif nombre==4:
+            return 'IV'
         else:
             return 'IV'
+
 
 
 #d
