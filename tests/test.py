@@ -33,11 +33,11 @@ class TestNombreRomain(unittest.TestCase):
         # test 3
         self.assertEqual(romain, 'IV')
         #etant donnee nombre 50
-        nombre =50
+        nombre =500
         #etant donnee nombre romain L
         romain=nr(nombre)
         #test nombre 50
-        self.assertEqual(romain,'L')
+        self.assertEqual(romain,'D')
 
 
 
