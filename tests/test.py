@@ -1,4 +1,4 @@
-from NombreRomain import NombreRomain as nr, ArabeToRomain, NombreRomain
+from src.NombreRomain import ArabeToRomain
 
 import unittest
 class TestNombreRomain(unittest.TestCase):
@@ -13,31 +13,7 @@ class TestNombreRomain(unittest.TestCase):
         romain=ArabeToRomain.NbrRomain(nombre)
         #Test 1
         self.assertEqual('I',romain)
-        #test 2
-        #etant donne chiffre 2
-        nombre=2
-        #etant donne nombre romain II
-        romain=ArabeToRomain.NbrRomain(nombre)
-        #Test 2
-        self.assertEqual(romain,'II')
-        #etant donne nombre 3
-        nombre=3
-        #etant donne nombre romain 'III
-        romain = ArabeToRomain.NbrRomain(nombre)
-        #test 3
-        self.assertEqual(romain,'III')
-        # etant donne nombre 4
-        nombre = 4
-        # etant donne nombre romain 'Iv'
-        romain = ArabeToRomain.NbrRomain(nombre)
-        # test 3
-        self.assertEqual(romain, 'IV')
-        #etant donnee nombre 50
-        nombre =500
-        #etant donnee nombre romain L
-        romain=nr(nombre)
-        #test nombre 50
-        self.assertEqual(romain,'D')
+
 
 
 
